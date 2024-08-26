@@ -1,0 +1,92 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Roboto",sans-serif;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  background-color:rgb(72, 153, 204);
+}
+
+.slide-wrapper{
+  overflow:hidden;
+  max-width:1200px;
+  margin:0 70px 55px;
+}
+.card-list .card-item{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  width:400px;
+  padding:35px;
+  border-radius:8px;
+  backdrop-filter: blur(30px);
+  background:rgba(255,255,255,0.2);
+  border:1px solid rgba(255,255,255,0.5)
+}
+
+.card-list .card-item .clock-img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  margin-bottom:40px;
+  border:3px solid #fff;
+  padding:4px;
+}
+
+.card-list .card-item .clock-desc{
+  font-size:1.15rem;
+  color:#e3e3e3;
+  font-weight:500;
+  margin:14px 0 40px;
+}
+
+.card-list .card-item .clock-btn{
+  font-size:1.25rem;
+  padding:10px 35px;
+  color:#030728;
+  border-radius:6px;
+  font-weight:500;
+  cursor:pointer;
+  background:#fff;
+  border:1px solid transparent;
+}
+
+.card-list .card-item .clock-btn:hover{
+  background:rgba(255,255,255,0.1);
+  border:1px solid #fff;
+  color:#fff;
+}
+
+.slider-wrapper .swiper-pragination-bullet{
+  background:#fff;
+  height:15px;
+  width:15px;
+}
+
+.slider-wrapper .swiper-slide-button{
+  color:#fff;
+  margin-top:-50px;
+  transition:0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+  color:#4658ff;
+}
+@media(max-width:768){
+  .slider-wrapper{
+    margin:0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button{
+    display:none;
+  }
+}
